@@ -11,3 +11,9 @@ pub struct Block {
     pub data: string,
     pub nonce: u64,
 }
+
+impl App {
+    fn new() -> Self {
+        Self { blocks: vec![] }
+    }
+}
