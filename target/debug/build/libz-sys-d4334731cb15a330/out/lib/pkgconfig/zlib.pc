@@ -1,0 +1,13 @@
+prefix=/Users/neil/Projects/Stagchain/target/debug/build/libz-sys-d4334731cb15a330/out
+exec_prefix=@exec_prefix@
+libdir=@libdir@
+sharedlibdir=@sharedlibdir@
+includedir=@includedir@
+
+Name: zlib
+Description: zlib compression library
+Version: @VERSION@
+
+Requires:
+Libs: -L${libdir} -L${sharedlibdir} -lz
+Cflags: -I${includedir}

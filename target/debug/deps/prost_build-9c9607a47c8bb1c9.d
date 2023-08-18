@@ -1,0 +1,16 @@
+/Users/neil/Projects/Stagchain/target/debug/deps/prost_build-9c9607a47c8bb1c9.rmeta: /Users/neil/.cargo/registry/src/index.crates.io-6f17d22bba15001f/prost-build-0.8.0/src/lib.rs /Users/neil/.cargo/registry/src/index.crates.io-6f17d22bba15001f/prost-build-0.8.0/src/ast.rs /Users/neil/.cargo/registry/src/index.crates.io-6f17d22bba15001f/prost-build-0.8.0/src/code_generator.rs /Users/neil/.cargo/registry/src/index.crates.io-6f17d22bba15001f/prost-build-0.8.0/src/extern_paths.rs /Users/neil/.cargo/registry/src/index.crates.io-6f17d22bba15001f/prost-build-0.8.0/src/ident.rs /Users/neil/.cargo/registry/src/index.crates.io-6f17d22bba15001f/prost-build-0.8.0/src/message_graph.rs /Users/neil/.cargo/registry/src/index.crates.io-6f17d22bba15001f/prost-build-0.8.0/src/path.rs
+
+/Users/neil/Projects/Stagchain/target/debug/deps/libprost_build-9c9607a47c8bb1c9.rlib: /Users/neil/.cargo/registry/src/index.crates.io-6f17d22bba15001f/prost-build-0.8.0/src/lib.rs /Users/neil/.cargo/registry/src/index.crates.io-6f17d22bba15001f/prost-build-0.8.0/src/ast.rs /Users/neil/.cargo/registry/src/index.crates.io-6f17d22bba15001f/prost-build-0.8.0/src/code_generator.rs /Users/neil/.cargo/registry/src/index.crates.io-6f17d22bba15001f/prost-build-0.8.0/src/extern_paths.rs /Users/neil/.cargo/registry/src/index.crates.io-6f17d22bba15001f/prost-build-0.8.0/src/ident.rs /Users/neil/.cargo/registry/src/index.crates.io-6f17d22bba15001f/prost-build-0.8.0/src/message_graph.rs /Users/neil/.cargo/registry/src/index.crates.io-6f17d22bba15001f/prost-build-0.8.0/src/path.rs
+
+/Users/neil/Projects/Stagchain/target/debug/deps/prost_build-9c9607a47c8bb1c9.d: /Users/neil/.cargo/registry/src/index.crates.io-6f17d22bba15001f/prost-build-0.8.0/src/lib.rs /Users/neil/.cargo/registry/src/index.crates.io-6f17d22bba15001f/prost-build-0.8.0/src/ast.rs /Users/neil/.cargo/registry/src/index.crates.io-6f17d22bba15001f/prost-build-0.8.0/src/code_generator.rs /Users/neil/.cargo/registry/src/index.crates.io-6f17d22bba15001f/prost-build-0.8.0/src/extern_paths.rs /Users/neil/.cargo/registry/src/index.crates.io-6f17d22bba15001f/prost-build-0.8.0/src/ident.rs /Users/neil/.cargo/registry/src/index.crates.io-6f17d22bba15001f/prost-build-0.8.0/src/message_graph.rs /Users/neil/.cargo/registry/src/index.crates.io-6f17d22bba15001f/prost-build-0.8.0/src/path.rs
+
+/Users/neil/.cargo/registry/src/index.crates.io-6f17d22bba15001f/prost-build-0.8.0/src/lib.rs:
+/Users/neil/.cargo/registry/src/index.crates.io-6f17d22bba15001f/prost-build-0.8.0/src/ast.rs:
+/Users/neil/.cargo/registry/src/index.crates.io-6f17d22bba15001f/prost-build-0.8.0/src/code_generator.rs:
+/Users/neil/.cargo/registry/src/index.crates.io-6f17d22bba15001f/prost-build-0.8.0/src/extern_paths.rs:
+/Users/neil/.cargo/registry/src/index.crates.io-6f17d22bba15001f/prost-build-0.8.0/src/ident.rs:
+/Users/neil/.cargo/registry/src/index.crates.io-6f17d22bba15001f/prost-build-0.8.0/src/message_graph.rs:
+/Users/neil/.cargo/registry/src/index.crates.io-6f17d22bba15001f/prost-build-0.8.0/src/path.rs:
+
+# env-dep:PROTOC=/Users/neil/.cargo/registry/src/index.crates.io-6f17d22bba15001f/prost-build-0.8.0/third-party/protobuf/protoc-osx-x86_64
+# env-dep:PROTOC_INCLUDE=/Users/neil/.cargo/registry/src/index.crates.io-6f17d22bba15001f/prost-build-0.8.0/third-party/protobuf/include

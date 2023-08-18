@@ -1,0 +1,799 @@
+cargo:rerun-if-env-changed=LIBZ_SYS_STATIC
+cargo:rerun-if-changed=build.rs
+cargo:rerun-if-env-changed=ZLIB_NO_PKG_CONFIG
+cargo:rerun-if-env-changed=PKG_CONFIG_aarch64-apple-darwin
+cargo:rerun-if-env-changed=PKG_CONFIG_aarch64_apple_darwin
+cargo:rerun-if-env-changed=HOST_PKG_CONFIG
+cargo:rerun-if-env-changed=PKG_CONFIG
+cargo:rerun-if-env-changed=ZLIB_STATIC
+cargo:rerun-if-env-changed=ZLIB_DYNAMIC
+cargo:rerun-if-env-changed=PKG_CONFIG_ALL_STATIC
+cargo:rerun-if-env-changed=PKG_CONFIG_ALL_DYNAMIC
+cargo:rerun-if-env-changed=PKG_CONFIG_PATH_aarch64-apple-darwin
+cargo:rerun-if-env-changed=PKG_CONFIG_PATH_aarch64_apple_darwin
+cargo:rerun-if-env-changed=HOST_PKG_CONFIG_PATH
+cargo:rerun-if-env-changed=PKG_CONFIG_PATH
+cargo:rerun-if-env-changed=PKG_CONFIG_LIBDIR_aarch64-apple-darwin
+cargo:rerun-if-env-changed=PKG_CONFIG_LIBDIR_aarch64_apple_darwin
+cargo:rerun-if-env-changed=HOST_PKG_CONFIG_LIBDIR
+cargo:rerun-if-env-changed=PKG_CONFIG_LIBDIR
+cargo:rerun-if-env-changed=PKG_CONFIG_SYSROOT_DIR_aarch64-apple-darwin
+cargo:rerun-if-env-changed=PKG_CONFIG_SYSROOT_DIR_aarch64_apple_darwin
+cargo:rerun-if-env-changed=HOST_PKG_CONFIG_SYSROOT_DIR
+cargo:rerun-if-env-changed=PKG_CONFIG_SYSROOT_DIR
+cargo:rerun-if-env-changed=ZLIB_STATIC
+cargo:rerun-if-env-changed=ZLIB_DYNAMIC
+cargo:rerun-if-env-changed=PKG_CONFIG_ALL_STATIC
+cargo:rerun-if-env-changed=PKG_CONFIG_ALL_DYNAMIC
+cargo:rerun-if-env-changed=PKG_CONFIG_PATH_aarch64-apple-darwin
+cargo:rerun-if-env-changed=PKG_CONFIG_PATH_aarch64_apple_darwin
+cargo:rerun-if-env-changed=HOST_PKG_CONFIG_PATH
+cargo:rerun-if-env-changed=PKG_CONFIG_PATH
+cargo:rerun-if-env-changed=PKG_CONFIG_LIBDIR_aarch64-apple-darwin
+cargo:rerun-if-env-changed=PKG_CONFIG_LIBDIR_aarch64_apple_darwin
+cargo:rerun-if-env-changed=HOST_PKG_CONFIG_LIBDIR
+cargo:rerun-if-env-changed=PKG_CONFIG_LIBDIR
+cargo:rerun-if-env-changed=PKG_CONFIG_SYSROOT_DIR_aarch64-apple-darwin
+cargo:rerun-if-env-changed=PKG_CONFIG_SYSROOT_DIR_aarch64_apple_darwin
+cargo:rerun-if-env-changed=HOST_PKG_CONFIG_SYSROOT_DIR
+cargo:rerun-if-env-changed=PKG_CONFIG_SYSROOT_DIR
+cargo-warning=Could not run `PKG_CONFIG_ALLOW_SYSTEM_CFLAGS="1" "pkg-config" "--libs" "--cflags" "zlib"`
+The pkg-config command could not be found.
+
+Most likely, you need to install a pkg-config package for your OS.
+Try `brew install pkg-config` if you have Homebrew.
+
+If you've already installed it, ensure the pkg-config command is one of the
+directories in the PATH environment variable.
+
+If you did not expect this build to link to a pre-installed system library,
+then check documentation of the libz-sys crate for an option to
+build the library from source, or disable features or dependencies
+that require pkg-config.
+OPT_LEVEL = Some("0")
+TARGET = Some("aarch64-apple-darwin")
+HOST = Some("aarch64-apple-darwin")
+cargo:rerun-if-env-changed=CC_aarch64-apple-darwin
+CC_aarch64-apple-darwin = None
+cargo:rerun-if-env-changed=CC_aarch64_apple_darwin
+CC_aarch64_apple_darwin = None
+cargo:rerun-if-env-changed=HOST_CC
+HOST_CC = None
+cargo:rerun-if-env-changed=CC
+CC = None
+cargo:rerun-if-env-changed=CRATE_CC_NO_DEFAULTS
+CRATE_CC_NO_DEFAULTS = None
+DEBUG = Some("true")
+CARGO_CFG_TARGET_FEATURE = Some("aes,crc,dit,dotprod,dpb,dpb2,fcma,fhm,flagm,fp16,frintts,jsconv,lor,lse,neon,paca,pacg,pan,pmuv3,ras,rcpc,rcpc2,rdm,sb,sha2,sha3,ssbs,vh")
+cargo:rerun-if-env-changed=CFLAGS_aarch64-apple-darwin
+CFLAGS_aarch64-apple-darwin = None
+cargo:rerun-if-env-changed=CFLAGS_aarch64_apple_darwin
+CFLAGS_aarch64_apple_darwin = None
+cargo:rerun-if-env-changed=HOST_CFLAGS
+HOST_CFLAGS = None
+cargo:rerun-if-env-changed=CFLAGS
+CFLAGS = None
+running "cc" "-O0" "-ffunction-sections" "-fdata-sections" "-fPIC" "-gdwarf-2" "-fno-omit-frame-pointer" "-arch" "arm64" "-Wall" "-Wextra" "src/smoke.c" "-o" "/dev/null" "-lz"
+running: "cc" "-O0" "-ffunction-sections" "-fdata-sections" "-fPIC" "-gdwarf-2" "-fno-omit-frame-pointer" "-arch" "arm64" "-I" "src/zlib" "-fvisibility=hidden" "-DZ_SOLO" "-DSTDC" "-D_LARGEFILE64_SOURCE" "-D_POSIX_SOURCE" "-D_C99_SOURCE" "-o" "/Users/neil/Projects/Stagchain/target/debug/build/libz-sys-d4334731cb15a330/out/lib/src/zlib/adler32.o" "-c" "src/zlib/adler32.c"
+cargo:warning=src/zlib/adler32.c:63:15: warning: a function declaration without a prototype is deprecated in all versions of C and is not supported in C2x [-Wdeprecated-non-prototype]
+
+cargo:warning=uLong ZEXPORT adler32_z(adler, buf, len)
+
+cargo:warning=              ^
+
+cargo:warning=src/zlib/adler32.c:134:15: warning: a function declaration without a prototype is deprecated in all versions of C and is not supported in C2x [-Wdeprecated-non-prototype]
+
+cargo:warning=uLong ZEXPORT adler32(adler, buf, len)
+
+cargo:warning=              ^
+
+cargo:warning=src/zlib/adler32.c:143:13: warning: a function declaration without a prototype is deprecated in all versions of C and is not supported in C2x [-Wdeprecated-non-prototype]
+
+cargo:warning=local uLong adler32_combine_(adler1, adler2, len2)
+
+cargo:warning=            ^
+
+cargo:warning=src/zlib/adler32.c:143:13: warning: a function declaration without a prototype is deprecated in all versions of C and is not supported in C2x [-Wdeprecated-non-prototype]
+
+cargo:warning=src/zlib/adler32.c:172:15: warning: a function declaration without a prototype is deprecated in all versions of C and is not supported in C2x [-Wdeprecated-non-prototype]
+
+cargo:warning=uLong ZEXPORT adler32_combine(adler1, adler2, len2)
+
+cargo:warning=              ^
+
+cargo:warning=src/zlib/adler32.c:180:15: warning: a function declaration without a prototype is deprecated in all versions of C and is not supported in C2x [-Wdeprecated-non-prototype]
+
+cargo:warning=uLong ZEXPORT adler32_combine64(adler1, adler2, len2)
+
+cargo:warning=              ^
+
+cargo:warning=6 warnings generated.
+
+exit status: 0
+running: "cc" "-O0" "-ffunction-sections" "-fdata-sections" "-fPIC" "-gdwarf-2" "-fno-omit-frame-pointer" "-arch" "arm64" "-I" "src/zlib" "-fvisibility=hidden" "-DZ_SOLO" "-DSTDC" "-D_LARGEFILE64_SOURCE" "-D_POSIX_SOURCE" "-D_C99_SOURCE" "-o" "/Users/neil/Projects/Stagchain/target/debug/build/libz-sys-d4334731cb15a330/out/lib/src/zlib/compress.o" "-c" "src/zlib/compress.c"
+cargo:warning=src/zlib/compress.c:22:13: warning: a function declaration without a prototype is deprecated in all versions of C and is not supported in C2x [-Wdeprecated-non-prototype]
+
+cargo:warning=int ZEXPORT compress2 (dest, destLen, source, sourceLen, level)
+
+cargo:warning=            ^
+
+cargo:warning=src/zlib/compress.c:68:13: warning: a function declaration without a prototype is deprecated in all versions of C and is not supported in C2x [-Wdeprecated-non-prototype]
+
+cargo:warning=int ZEXPORT compress (dest, destLen, source, sourceLen)
+
+cargo:warning=            ^
+
+cargo:warning=src/zlib/compress.c:81:15: warning: a function declaration without a prototype is deprecated in all versions of C and is not supported in C2x [-Wdeprecated-non-prototype]
+
+cargo:warning=uLong ZEXPORT compressBound (sourceLen)
+
+cargo:warning=              ^
+
+cargo:warning=3 warnings generated.
+
+exit status: 0
+running: "cc" "-O0" "-ffunction-sections" "-fdata-sections" "-fPIC" "-gdwarf-2" "-fno-omit-frame-pointer" "-arch" "arm64" "-I" "src/zlib" "-fvisibility=hidden" "-DZ_SOLO" "-DSTDC" "-D_LARGEFILE64_SOURCE" "-D_POSIX_SOURCE" "-D_C99_SOURCE" "-o" "/Users/neil/Projects/Stagchain/target/debug/build/libz-sys-d4334731cb15a330/out/lib/src/zlib/crc32.o" "-c" "src/zlib/crc32.c"
+cargo:warning=src/zlib/crc32.c:202:23: warning: a function declaration without a prototype is deprecated in all versions of C and is not supported in C2x [-Wdeprecated-non-prototype]
+
+cargo:warning=unsigned long ZEXPORT crc32_z(crc, buf, len)
+
+cargo:warning=                      ^
+
+cargo:warning=src/zlib/crc32.c:237:23: warning: a function declaration without a prototype is deprecated in all versions of C and is not supported in C2x [-Wdeprecated-non-prototype]
+
+cargo:warning=unsigned long ZEXPORT crc32(crc, buf, len)
+
+cargo:warning=                      ^
+
+cargo:warning=src/zlib/crc32.c:344:21: warning: a function declaration without a prototype is deprecated in all versions of C and is not supported in C2x [-Wdeprecated-non-prototype]
+
+cargo:warning=local unsigned long gf2_matrix_times(mat, vec)
+
+cargo:warning=                    ^
+
+cargo:warning=src/zlib/crc32.c:344:21: warning: a function declaration without a prototype is deprecated in all versions of C and is not supported in C2x [-Wdeprecated-non-prototype]
+
+cargo:warning=src/zlib/crc32.c:361:12: warning: a function declaration without a prototype is deprecated in all versions of C and is not supported in C2x [-Wdeprecated-non-prototype]
+
+cargo:warning=local void gf2_matrix_square(square, mat)
+
+cargo:warning=           ^
+
+cargo:warning=src/zlib/crc32.c:361:12: warning: a function declaration without a prototype is deprecated in all versions of C and is not supported in C2x [-Wdeprecated-non-prototype]
+
+cargo:warning=src/zlib/crc32.c:372:13: warning: a function declaration without a prototype is deprecated in all versions of C and is not supported in C2x [-Wdeprecated-non-prototype]
+
+cargo:warning=local uLong crc32_combine_(crc1, crc2, len2)
+
+cargo:warning=            ^
+
+cargo:warning=src/zlib/crc32.c:372:13: warning: a function declaration without a prototype is deprecated in all versions of C and is not supported in C2x [-Wdeprecated-non-prototype]
+
+cargo:warning=src/zlib/crc32.c:428:15: warning: a function declaration without a prototype is deprecated in all versions of C and is not supported in C2x [-Wdeprecated-non-prototype]
+
+cargo:warning=uLong ZEXPORT crc32_combine(crc1, crc2, len2)
+
+cargo:warning=              ^
+
+cargo:warning=src/zlib/crc32.c:436:15: warning: a function declaration without a prototype is deprecated in all versions of C and is not supported in C2x [-Wdeprecated-non-prototype]
+
+cargo:warning=uLong ZEXPORT crc32_combine64(crc1, crc2, len2)
+
+cargo:warning=              ^
+
+cargo:warning=10 warnings generated.
+
+exit status: 0
+running: "cc" "-O0" "-ffunction-sections" "-fdata-sections" "-fPIC" "-gdwarf-2" "-fno-omit-frame-pointer" "-arch" "arm64" "-I" "src/zlib" "-fvisibility=hidden" "-DZ_SOLO" "-DSTDC" "-D_LARGEFILE64_SOURCE" "-D_POSIX_SOURCE" "-D_C99_SOURCE" "-o" "/Users/neil/Projects/Stagchain/target/debug/build/libz-sys-d4334731cb15a330/out/lib/src/zlib/deflate.o" "-c" "src/zlib/deflate.c"
+cargo:warning=src/zlib/deflate.c:201:12: warning: a function declaration without a prototype is deprecated in all versions of C and is not supported in C2x [-Wdeprecated-non-prototype]
+
+cargo:warning=local void slide_hash(s)
+
+cargo:warning=           ^
+
+cargo:warning=src/zlib/deflate.c:201:12: warning: a function declaration without a prototype is deprecated in all versions of C and is not supported in C2x [-Wdeprecated-non-prototype]
+
+cargo:warning=src/zlib/deflate.c:228:13: warning: a function declaration without a prototype is deprecated in all versions of C and is not supported in C2x [-Wdeprecated-non-prototype]
+
+cargo:warning=int ZEXPORT deflateInit_(strm, level, version, stream_size)
+
+cargo:warning=            ^
+
+cargo:warning=src/zlib/deflate.c:240:13: warning: a function declaration without a prototype is deprecated in all versions of C and is not supported in C2x [-Wdeprecated-non-prototype]
+
+cargo:warning=int ZEXPORT deflateInit2_(strm, level, method, windowBits, memLevel, strategy,
+
+cargo:warning=            ^
+
+cargo:warning=src/zlib/deflate.c:353:11: warning: a function declaration without a prototype is deprecated in all versions of C and is not supported in C2x [-Wdeprecated-non-prototype]
+
+cargo:warning=local int deflateStateCheck (strm)
+
+cargo:warning=          ^
+
+cargo:warning=src/zlib/deflate.c:353:11: warning: a function declaration without a prototype is deprecated in all versions of C and is not supported in C2x [-Wdeprecated-non-prototype]
+
+cargo:warning=src/zlib/deflate.c:376:13: warning: a function declaration without a prototype is deprecated in all versions of C and is not supported in C2x [-Wdeprecated-non-prototype]
+
+cargo:warning=int ZEXPORT deflateSetDictionary (strm, dictionary, dictLength)
+
+cargo:warning=            ^
+
+cargo:warning=src/zlib/deflate.c:445:13: warning: a function declaration without a prototype is deprecated in all versions of C and is not supported in C2x [-Wdeprecated-non-prototype]
+
+cargo:warning=int ZEXPORT deflateGetDictionary (strm, dictionary, dictLength)
+
+cargo:warning=            ^
+
+cargo:warning=src/zlib/deflate.c:467:13: warning: a function declaration without a prototype is deprecated in all versions of C and is not supported in C2x [-Wdeprecated-non-prototype]
+
+cargo:warning=int ZEXPORT deflateResetKeep (strm)
+
+cargo:warning=            ^
+
+cargo:warning=src/zlib/deflate.c:505:13: warning: a function declaration without a prototype is deprecated in all versions of C and is not supported in C2x [-Wdeprecated-non-prototype]
+
+cargo:warning=int ZEXPORT deflateReset (strm)
+
+cargo:warning=            ^
+
+cargo:warning=src/zlib/deflate.c:517:13: warning: a function declaration without a prototype is deprecated in all versions of C and is not supported in C2x [-Wdeprecated-non-prototype]
+
+cargo:warning=int ZEXPORT deflateSetHeader (strm, head)
+
+cargo:warning=            ^
+
+cargo:warning=src/zlib/deflate.c:528:13: warning: a function declaration without a prototype is deprecated in all versions of C and is not supported in C2x [-Wdeprecated-non-prototype]
+
+cargo:warning=int ZEXPORT deflatePending (strm, pending, bits)
+
+cargo:warning=            ^
+
+cargo:warning=src/zlib/deflate.c:542:13: warning: a function declaration without a prototype is deprecated in all versions of C and is not supported in C2x [-Wdeprecated-non-prototype]
+
+cargo:warning=int ZEXPORT deflatePrime (strm, bits, value)
+
+cargo:warning=            ^
+
+cargo:warning=src/zlib/deflate.c:568:13: warning: a function declaration without a prototype is deprecated in all versions of C and is not supported in C2x [-Wdeprecated-non-prototype]
+
+cargo:warning=int ZEXPORT deflateParams(strm, level, strategy)
+
+cargo:warning=            ^
+
+cargo:warning=src/zlib/deflate.c:617:13: warning: a function declaration without a prototype is deprecated in all versions of C and is not supported in C2x [-Wdeprecated-non-prototype]
+
+cargo:warning=int ZEXPORT deflateTune(strm, good_length, max_lazy, nice_length, max_chain)
+
+cargo:warning=            ^
+
+cargo:warning=src/zlib/deflate.c:652:15: warning: a function declaration without a prototype is deprecated in all versions of C and is not supported in C2x [-Wdeprecated-non-prototype]
+
+cargo:warning=uLong ZEXPORT deflateBound(strm, sourceLen)
+
+cargo:warning=              ^
+
+cargo:warning=src/zlib/deflate.c:716:12: warning: a function declaration without a prototype is deprecated in all versions of C and is not supported in C2x [-Wdeprecated-non-prototype]
+
+cargo:warning=local void putShortMSB (s, b)
+
+cargo:warning=           ^
+
+cargo:warning=src/zlib/deflate.c:716:12: warning: a function declaration without a prototype is deprecated in all versions of C and is not supported in C2x [-Wdeprecated-non-prototype]
+
+cargo:warning=src/zlib/deflate.c:730:12: warning: a function declaration without a prototype is deprecated in all versions of C and is not supported in C2x [-Wdeprecated-non-prototype]
+
+cargo:warning=local void flush_pending(strm)
+
+cargo:warning=           ^
+
+cargo:warning=src/zlib/deflate.c:730:12: warning: a function declaration without a prototype is deprecated in all versions of C and is not supported in C2x [-Wdeprecated-non-prototype]
+
+cargo:warning=src/zlib/deflate.c:763:13: warning: a function declaration without a prototype is deprecated in all versions of C and is not supported in C2x [-Wdeprecated-non-prototype]
+
+cargo:warning=int ZEXPORT deflate (strm, flush)
+
+cargo:warning=            ^
+
+cargo:warning=src/zlib/deflate.c:1076:13: warning: a function declaration without a prototype is deprecated in all versions of C and is not supported in C2x [-Wdeprecated-non-prototype]
+
+cargo:warning=int ZEXPORT deflateEnd (strm)
+
+cargo:warning=            ^
+
+cargo:warning=src/zlib/deflate.c:1102:13: warning: a function declaration without a prototype is deprecated in all versions of C and is not supported in C2x [-Wdeprecated-non-prototype]
+
+cargo:warning=int ZEXPORT deflateCopy (dest, source)
+
+cargo:warning=            ^
+
+cargo:warning=src/zlib/deflate.c:1164:16: warning: a function declaration without a prototype is deprecated in all versions of C and is not supported in C2x [-Wdeprecated-non-prototype]
+
+cargo:warning=local unsigned read_buf(strm, buf, size)
+
+cargo:warning=               ^
+
+cargo:warning=src/zlib/deflate.c:1164:16: warning: a function declaration without a prototype is deprecated in all versions of C and is not supported in C2x [-Wdeprecated-non-prototype]
+
+cargo:warning=src/zlib/deflate.c:1194:12: warning: a function declaration without a prototype is deprecated in all versions of C and is not supported in C2x [-Wdeprecated-non-prototype]
+
+cargo:warning=local void lm_init (s)
+
+cargo:warning=           ^
+
+cargo:warning=src/zlib/deflate.c:1194:12: warning: a function declaration without a prototype is deprecated in all versions of C and is not supported in C2x [-Wdeprecated-non-prototype]
+
+cargo:warning=src/zlib/deflate.c:1236:12: warning: a function declaration without a prototype is deprecated in all versions of C and is not supported in C2x [-Wdeprecated-non-prototype]
+
+cargo:warning=local uInt longest_match(s, cur_match)
+
+cargo:warning=           ^
+
+cargo:warning=src/zlib/deflate.c:1236:12: warning: a function declaration without a prototype is deprecated in all versions of C and is not supported in C2x [-Wdeprecated-non-prototype]
+
+cargo:warning=src/zlib/deflate.c:1482:12: warning: a function declaration without a prototype is deprecated in all versions of C and is not supported in C2x [-Wdeprecated-non-prototype]
+
+cargo:warning=local void fill_window(s)
+
+cargo:warning=           ^
+
+cargo:warning=src/zlib/deflate.c:1482:12: warning: a function declaration without a prototype is deprecated in all versions of C and is not supported in C2x [-Wdeprecated-non-prototype]
+
+cargo:warning=src/zlib/deflate.c:1643:19: warning: a function declaration without a prototype is deprecated in all versions of C and is not supported in C2x [-Wdeprecated-non-prototype]
+
+cargo:warning=local block_state deflate_stored(s, flush)
+
+cargo:warning=                  ^
+
+cargo:warning=src/zlib/deflate.c:1643:19: warning: a function declaration without a prototype is deprecated in all versions of C and is not supported in C2x [-Wdeprecated-non-prototype]
+
+cargo:warning=src/zlib/deflate.c:1824:19: warning: a function declaration without a prototype is deprecated in all versions of C and is not supported in C2x [-Wdeprecated-non-prototype]
+
+cargo:warning=local block_state deflate_fast(s, flush)
+
+cargo:warning=                  ^
+
+cargo:warning=src/zlib/deflate.c:1824:19: warning: a function declaration without a prototype is deprecated in all versions of C and is not supported in C2x [-Wdeprecated-non-prototype]
+
+cargo:warning=src/zlib/deflate.c:1926:19: warning: a function declaration without a prototype is deprecated in all versions of C and is not supported in C2x [-Wdeprecated-non-prototype]
+
+cargo:warning=local block_state deflate_slow(s, flush)
+
+cargo:warning=                  ^
+
+cargo:warning=src/zlib/deflate.c:1926:19: warning: a function declaration without a prototype is deprecated in all versions of C and is not supported in C2x [-Wdeprecated-non-prototype]
+
+cargo:warning=src/zlib/deflate.c:2057:19: warning: a function declaration without a prototype is deprecated in all versions of C and is not supported in C2x [-Wdeprecated-non-prototype]
+
+cargo:warning=local block_state deflate_rle(s, flush)
+
+cargo:warning=                  ^
+
+cargo:warning=src/zlib/deflate.c:2057:19: warning: a function declaration without a prototype is deprecated in all versions of C and is not supported in C2x [-Wdeprecated-non-prototype]
+
+cargo:warning=src/zlib/deflate.c:2130:19: warning: a function declaration without a prototype is deprecated in all versions of C and is not supported in C2x [-Wdeprecated-non-prototype]
+
+cargo:warning=local block_state deflate_huff(s, flush)
+
+cargo:warning=                  ^
+
+cargo:warning=src/zlib/deflate.c:2130:19: warning: a function declaration without a prototype is deprecated in all versions of C and is not supported in C2x [-Wdeprecated-non-prototype]
+
+cargo:warning=41 warnings generated.
+
+exit status: 0
+running: "cc" "-O0" "-ffunction-sections" "-fdata-sections" "-fPIC" "-gdwarf-2" "-fno-omit-frame-pointer" "-arch" "arm64" "-I" "src/zlib" "-fvisibility=hidden" "-DZ_SOLO" "-DSTDC" "-D_LARGEFILE64_SOURCE" "-D_POSIX_SOURCE" "-D_C99_SOURCE" "-o" "/Users/neil/Projects/Stagchain/target/debug/build/libz-sys-d4334731cb15a330/out/lib/src/zlib/infback.o" "-c" "src/zlib/infback.c"
+cargo:warning=src/zlib/infback.c:28:13: warning: a function declaration without a prototype is deprecated in all versions of C and is not supported in C2x [-Wdeprecated-non-prototype]
+
+cargo:warning=int ZEXPORT inflateBackInit_(strm, windowBits, window, version, stream_size)
+
+cargo:warning=            ^
+
+cargo:warning=src/zlib/infback.c:82:12: warning: a function declaration without a prototype is deprecated in all versions of C and is not supported in C2x [-Wdeprecated-non-prototype]
+
+cargo:warning=local void fixedtables(state)
+
+cargo:warning=           ^
+
+cargo:warning=src/zlib/infback.c:82:12: warning: a function declaration without a prototype is deprecated in all versions of C and is not supported in C2x [-Wdeprecated-non-prototype]
+
+cargo:warning=src/zlib/infback.c:250:13: warning: a function declaration without a prototype is deprecated in all versions of C and is not supported in C2x [-Wdeprecated-non-prototype]
+
+cargo:warning=int ZEXPORT inflateBack(strm, in, in_desc, out, out_desc)
+
+cargo:warning=            ^
+
+cargo:warning=src/zlib/infback.c:631:13: warning: a function declaration without a prototype is deprecated in all versions of C and is not supported in C2x [-Wdeprecated-non-prototype]
+
+cargo:warning=int ZEXPORT inflateBackEnd(strm)
+
+cargo:warning=            ^
+
+cargo:warning=5 warnings generated.
+
+exit status: 0
+running: "cc" "-O0" "-ffunction-sections" "-fdata-sections" "-fPIC" "-gdwarf-2" "-fno-omit-frame-pointer" "-arch" "arm64" "-I" "src/zlib" "-fvisibility=hidden" "-DZ_SOLO" "-DSTDC" "-D_LARGEFILE64_SOURCE" "-D_POSIX_SOURCE" "-D_C99_SOURCE" "-o" "/Users/neil/Projects/Stagchain/target/debug/build/libz-sys-d4334731cb15a330/out/lib/src/zlib/inffast.o" "-c" "src/zlib/inffast.c"
+cargo:warning=src/zlib/inffast.c:50:20: warning: a function declaration without a prototype is deprecated in all versions of C and is not supported in C2x [-Wdeprecated-non-prototype]
+
+cargo:warning=void ZLIB_INTERNAL inflate_fast(strm, start)
+
+cargo:warning=                   ^
+
+cargo:warning=1 warning generated.
+
+exit status: 0
+running: "cc" "-O0" "-ffunction-sections" "-fdata-sections" "-fPIC" "-gdwarf-2" "-fno-omit-frame-pointer" "-arch" "arm64" "-I" "src/zlib" "-fvisibility=hidden" "-DZ_SOLO" "-DSTDC" "-D_LARGEFILE64_SOURCE" "-D_POSIX_SOURCE" "-D_C99_SOURCE" "-o" "/Users/neil/Projects/Stagchain/target/debug/build/libz-sys-d4334731cb15a330/out/lib/src/zlib/inflate.o" "-c" "src/zlib/inflate.c"
+cargo:warning=src/zlib/inflate.c:105:11: warning: a function declaration without a prototype is deprecated in all versions of C and is not supported in C2x [-Wdeprecated-non-prototype]
+
+cargo:warning=local int inflateStateCheck(strm)
+
+cargo:warning=          ^
+
+cargo:warning=src/zlib/inflate.c:105:11: warning: a function declaration without a prototype is deprecated in all versions of C and is not supported in C2x [-Wdeprecated-non-prototype]
+
+cargo:warning=src/zlib/inflate.c:119:13: warning: a function declaration without a prototype is deprecated in all versions of C and is not supported in C2x [-Wdeprecated-non-prototype]
+
+cargo:warning=int ZEXPORT inflateResetKeep(strm)
+
+cargo:warning=            ^
+
+cargo:warning=src/zlib/inflate.c:144:13: warning: a function declaration without a prototype is deprecated in all versions of C and is not supported in C2x [-Wdeprecated-non-prototype]
+
+cargo:warning=int ZEXPORT inflateReset(strm)
+
+cargo:warning=            ^
+
+cargo:warning=src/zlib/inflate.c:157:13: warning: a function declaration without a prototype is deprecated in all versions of C and is not supported in C2x [-Wdeprecated-non-prototype]
+
+cargo:warning=int ZEXPORT inflateReset2(strm, windowBits)
+
+cargo:warning=            ^
+
+cargo:warning=src/zlib/inflate.c:195:13: warning: a function declaration without a prototype is deprecated in all versions of C and is not supported in C2x [-Wdeprecated-non-prototype]
+
+cargo:warning=int ZEXPORT inflateInit2_(strm, windowBits, version, stream_size)
+
+cargo:warning=            ^
+
+cargo:warning=src/zlib/inflate.c:239:13: warning: a function declaration without a prototype is deprecated in all versions of C and is not supported in C2x [-Wdeprecated-non-prototype]
+
+cargo:warning=int ZEXPORT inflateInit_(strm, version, stream_size)
+
+cargo:warning=            ^
+
+cargo:warning=src/zlib/inflate.c:247:13: warning: a function declaration without a prototype is deprecated in all versions of C and is not supported in C2x [-Wdeprecated-non-prototype]
+
+cargo:warning=int ZEXPORT inflatePrime(strm, bits, value)
+
+cargo:warning=            ^
+
+cargo:warning=src/zlib/inflate.c:278:12: warning: a function declaration without a prototype is deprecated in all versions of C and is not supported in C2x [-Wdeprecated-non-prototype]
+
+cargo:warning=local void fixedtables(state)
+
+cargo:warning=           ^
+
+cargo:warning=src/zlib/inflate.c:278:12: warning: a function declaration without a prototype is deprecated in all versions of C and is not supported in C2x [-Wdeprecated-non-prototype]
+
+cargo:warning=src/zlib/inflate.c:396:11: warning: a function declaration without a prototype is deprecated in all versions of C and is not supported in C2x [-Wdeprecated-non-prototype]
+
+cargo:warning=local int updatewindow(strm, end, copy)
+
+cargo:warning=          ^
+
+cargo:warning=src/zlib/inflate.c:396:11: warning: a function declaration without a prototype is deprecated in all versions of C and is not supported in C2x [-Wdeprecated-non-prototype]
+
+cargo:warning=src/zlib/inflate.c:622:13: warning: a function declaration without a prototype is deprecated in all versions of C and is not supported in C2x [-Wdeprecated-non-prototype]
+
+cargo:warning=int ZEXPORT inflate(strm, flush)
+
+cargo:warning=            ^
+
+cargo:warning=src/zlib/inflate.c:1277:13: warning: a function declaration without a prototype is deprecated in all versions of C and is not supported in C2x [-Wdeprecated-non-prototype]
+
+cargo:warning=int ZEXPORT inflateEnd(strm)
+
+cargo:warning=            ^
+
+cargo:warning=src/zlib/inflate.c:1291:13: warning: a function declaration without a prototype is deprecated in all versions of C and is not supported in C2x [-Wdeprecated-non-prototype]
+
+cargo:warning=int ZEXPORT inflateGetDictionary(strm, dictionary, dictLength)
+
+cargo:warning=            ^
+
+cargo:warning=src/zlib/inflate.c:1314:13: warning: a function declaration without a prototype is deprecated in all versions of C and is not supported in C2x [-Wdeprecated-non-prototype]
+
+cargo:warning=int ZEXPORT inflateSetDictionary(strm, dictionary, dictLength)
+
+cargo:warning=            ^
+
+cargo:warning=src/zlib/inflate.c:1349:13: warning: a function declaration without a prototype is deprecated in all versions of C and is not supported in C2x [-Wdeprecated-non-prototype]
+
+cargo:warning=int ZEXPORT inflateGetHeader(strm, head)
+
+cargo:warning=            ^
+
+cargo:warning=src/zlib/inflate.c:1377:16: warning: a function declaration without a prototype is deprecated in all versions of C and is not supported in C2x [-Wdeprecated-non-prototype]
+
+cargo:warning=local unsigned syncsearch(have, buf, len)
+
+cargo:warning=               ^
+
+cargo:warning=src/zlib/inflate.c:1377:16: warning: a function declaration without a prototype is deprecated in all versions of C and is not supported in C2x [-Wdeprecated-non-prototype]
+
+cargo:warning=src/zlib/inflate.c:1400:13: warning: a function declaration without a prototype is deprecated in all versions of C and is not supported in C2x [-Wdeprecated-non-prototype]
+
+cargo:warning=int ZEXPORT inflateSync(strm)
+
+cargo:warning=            ^
+
+cargo:warning=src/zlib/inflate.c:1451:13: warning: a function declaration without a prototype is deprecated in all versions of C and is not supported in C2x [-Wdeprecated-non-prototype]
+
+cargo:warning=int ZEXPORT inflateSyncPoint(strm)
+
+cargo:warning=            ^
+
+cargo:warning=src/zlib/inflate.c:1461:13: warning: a function declaration without a prototype is deprecated in all versions of C and is not supported in C2x [-Wdeprecated-non-prototype]
+
+cargo:warning=int ZEXPORT inflateCopy(dest, source)
+
+cargo:warning=            ^
+
+cargo:warning=src/zlib/inflate.c:1508:13: warning: a function declaration without a prototype is deprecated in all versions of C and is not supported in C2x [-Wdeprecated-non-prototype]
+
+cargo:warning=int ZEXPORT inflateUndermine(strm, subvert)
+
+cargo:warning=            ^
+
+cargo:warning=src/zlib/inflate.c:1526:13: warning: a function declaration without a prototype is deprecated in all versions of C and is not supported in C2x [-Wdeprecated-non-prototype]
+
+cargo:warning=int ZEXPORT inflateValidate(strm, check)
+
+cargo:warning=            ^
+
+cargo:warning=src/zlib/inflate.c:1541:14: warning: a function declaration without a prototype is deprecated in all versions of C and is not supported in C2x [-Wdeprecated-non-prototype]
+
+cargo:warning=long ZEXPORT inflateMark(strm)
+
+cargo:warning=             ^
+
+cargo:warning=src/zlib/inflate.c:1554:23: warning: a function declaration without a prototype is deprecated in all versions of C and is not supported in C2x [-Wdeprecated-non-prototype]
+
+cargo:warning=unsigned long ZEXPORT inflateCodesUsed(strm)
+
+cargo:warning=                      ^
+
+cargo:warning=26 warnings generated.
+
+exit status: 0
+running: "cc" "-O0" "-ffunction-sections" "-fdata-sections" "-fPIC" "-gdwarf-2" "-fno-omit-frame-pointer" "-arch" "arm64" "-I" "src/zlib" "-fvisibility=hidden" "-DZ_SOLO" "-DSTDC" "-D_LARGEFILE64_SOURCE" "-D_POSIX_SOURCE" "-D_C99_SOURCE" "-o" "/Users/neil/Projects/Stagchain/target/debug/build/libz-sys-d4334731cb15a330/out/lib/src/zlib/inftrees.o" "-c" "src/zlib/inftrees.c"
+cargo:warning=src/zlib/inftrees.c:32:19: warning: a function declaration without a prototype is deprecated in all versions of C and is not supported in C2x [-Wdeprecated-non-prototype]
+
+cargo:warning=int ZLIB_INTERNAL inflate_table(type, lens, codes, table, bits, work)
+
+cargo:warning=                  ^
+
+cargo:warning=1 warning generated.
+
+exit status: 0
+running: "cc" "-O0" "-ffunction-sections" "-fdata-sections" "-fPIC" "-gdwarf-2" "-fno-omit-frame-pointer" "-arch" "arm64" "-I" "src/zlib" "-fvisibility=hidden" "-DZ_SOLO" "-DSTDC" "-D_LARGEFILE64_SOURCE" "-D_POSIX_SOURCE" "-D_C99_SOURCE" "-o" "/Users/neil/Projects/Stagchain/target/debug/build/libz-sys-d4334731cb15a330/out/lib/src/zlib/trees.o" "-c" "src/zlib/trees.c"
+cargo:warning=src/zlib/trees.c:379:20: warning: a function declaration without a prototype is deprecated in all versions of C and is not supported in C2x [-Wdeprecated-non-prototype]
+
+cargo:warning=void ZLIB_INTERNAL _tr_init(s)
+
+cargo:warning=                   ^
+
+cargo:warning=src/zlib/trees.c:407:12: warning: a function declaration without a prototype is deprecated in all versions of C and is not supported in C2x [-Wdeprecated-non-prototype]
+
+cargo:warning=local void init_block(s)
+
+cargo:warning=           ^
+
+cargo:warning=src/zlib/trees.c:407:12: warning: a function declaration without a prototype is deprecated in all versions of C and is not supported in C2x [-Wdeprecated-non-prototype]
+
+cargo:warning=src/zlib/trees.c:451:12: warning: a function declaration without a prototype is deprecated in all versions of C and is not supported in C2x [-Wdeprecated-non-prototype]
+
+cargo:warning=local void pqdownheap(s, tree, k)
+
+cargo:warning=           ^
+
+cargo:warning=src/zlib/trees.c:451:12: warning: a function declaration without a prototype is deprecated in all versions of C and is not supported in C2x [-Wdeprecated-non-prototype]
+
+cargo:warning=src/zlib/trees.c:486:12: warning: a function declaration without a prototype is deprecated in all versions of C and is not supported in C2x [-Wdeprecated-non-prototype]
+
+cargo:warning=local void gen_bitlen(s, desc)
+
+cargo:warning=           ^
+
+cargo:warning=src/zlib/trees.c:486:12: warning: a function declaration without a prototype is deprecated in all versions of C and is not supported in C2x [-Wdeprecated-non-prototype]
+
+cargo:warning=src/zlib/trees.c:572:12: warning: a function declaration without a prototype is deprecated in all versions of C and is not supported in C2x [-Wdeprecated-non-prototype]
+
+cargo:warning=local void gen_codes (tree, max_code, bl_count)
+
+cargo:warning=           ^
+
+cargo:warning=src/zlib/trees.c:572:12: warning: a function declaration without a prototype is deprecated in all versions of C and is not supported in C2x [-Wdeprecated-non-prototype]
+
+cargo:warning=src/zlib/trees.c:615:12: warning: a function declaration without a prototype is deprecated in all versions of C and is not supported in C2x [-Wdeprecated-non-prototype]
+
+cargo:warning=local void build_tree(s, desc)
+
+cargo:warning=           ^
+
+cargo:warning=src/zlib/trees.c:615:12: warning: a function declaration without a prototype is deprecated in all versions of C and is not supported in C2x [-Wdeprecated-non-prototype]
+
+cargo:warning=src/zlib/trees.c:703:12: warning: a function declaration without a prototype is deprecated in all versions of C and is not supported in C2x [-Wdeprecated-non-prototype]
+
+cargo:warning=local void scan_tree (s, tree, max_code)
+
+cargo:warning=           ^
+
+cargo:warning=src/zlib/trees.c:703:12: warning: a function declaration without a prototype is deprecated in all versions of C and is not supported in C2x [-Wdeprecated-non-prototype]
+
+cargo:warning=src/zlib/trees.c:748:12: warning: a function declaration without a prototype is deprecated in all versions of C and is not supported in C2x [-Wdeprecated-non-prototype]
+
+cargo:warning=local void send_tree (s, tree, max_code)
+
+cargo:warning=           ^
+
+cargo:warning=src/zlib/trees.c:748:12: warning: a function declaration without a prototype is deprecated in all versions of C and is not supported in C2x [-Wdeprecated-non-prototype]
+
+cargo:warning=src/zlib/trees.c:799:11: warning: a function declaration without a prototype is deprecated in all versions of C and is not supported in C2x [-Wdeprecated-non-prototype]
+
+cargo:warning=local int build_bl_tree(s)
+
+cargo:warning=          ^
+
+cargo:warning=src/zlib/trees.c:799:11: warning: a function declaration without a prototype is deprecated in all versions of C and is not supported in C2x [-Wdeprecated-non-prototype]
+
+cargo:warning=src/zlib/trees.c:834:12: warning: a function declaration without a prototype is deprecated in all versions of C and is not supported in C2x [-Wdeprecated-non-prototype]
+
+cargo:warning=local void send_all_trees(s, lcodes, dcodes, blcodes)
+
+cargo:warning=           ^
+
+cargo:warning=src/zlib/trees.c:834:12: warning: a function declaration without a prototype is deprecated in all versions of C and is not supported in C2x [-Wdeprecated-non-prototype]
+
+cargo:warning=src/zlib/trees.c:863:20: warning: a function declaration without a prototype is deprecated in all versions of C and is not supported in C2x [-Wdeprecated-non-prototype]
+
+cargo:warning=void ZLIB_INTERNAL _tr_stored_block(s, buf, stored_len, last)
+
+cargo:warning=                   ^
+
+cargo:warning=src/zlib/trees.c:886:20: warning: a function declaration without a prototype is deprecated in all versions of C and is not supported in C2x [-Wdeprecated-non-prototype]
+
+cargo:warning=void ZLIB_INTERNAL _tr_flush_bits(s)
+
+cargo:warning=                   ^
+
+cargo:warning=src/zlib/trees.c:896:20: warning: a function declaration without a prototype is deprecated in all versions of C and is not supported in C2x [-Wdeprecated-non-prototype]
+
+cargo:warning=void ZLIB_INTERNAL _tr_align(s)
+
+cargo:warning=                   ^
+
+cargo:warning=src/zlib/trees.c:911:20: warning: a function declaration without a prototype is deprecated in all versions of C and is not supported in C2x [-Wdeprecated-non-prototype]
+
+cargo:warning=void ZLIB_INTERNAL _tr_flush_block(s, buf, stored_len, last)
+
+cargo:warning=                   ^
+
+cargo:warning=src/zlib/trees.c:1014:19: warning: a function declaration without a prototype is deprecated in all versions of C and is not supported in C2x [-Wdeprecated-non-prototype]
+
+cargo:warning=int ZLIB_INTERNAL _tr_tally (s, dist, lc)
+
+cargo:warning=                  ^
+
+cargo:warning=src/zlib/trees.c:1064:12: warning: a function declaration without a prototype is deprecated in all versions of C and is not supported in C2x [-Wdeprecated-non-prototype]
+
+cargo:warning=local void compress_block(s, ltree, dtree)
+
+cargo:warning=           ^
+
+cargo:warning=src/zlib/trees.c:1064:12: warning: a function declaration without a prototype is deprecated in all versions of C and is not supported in C2x [-Wdeprecated-non-prototype]
+
+cargo:warning=src/zlib/trees.c:1124:11: warning: a function declaration without a prototype is deprecated in all versions of C and is not supported in C2x [-Wdeprecated-non-prototype]
+
+cargo:warning=local int detect_data_type(s)
+
+cargo:warning=          ^
+
+cargo:warning=src/zlib/trees.c:1124:11: warning: a function declaration without a prototype is deprecated in all versions of C and is not supported in C2x [-Wdeprecated-non-prototype]
+
+cargo:warning=src/zlib/trees.c:1158:16: warning: a function declaration without a prototype is deprecated in all versions of C and is not supported in C2x [-Wdeprecated-non-prototype]
+
+cargo:warning=local unsigned bi_reverse(code, len)
+
+cargo:warning=               ^
+
+cargo:warning=src/zlib/trees.c:1158:16: warning: a function declaration without a prototype is deprecated in all versions of C and is not supported in C2x [-Wdeprecated-non-prototype]
+
+cargo:warning=src/zlib/trees.c:1173:12: warning: a function declaration without a prototype is deprecated in all versions of C and is not supported in C2x [-Wdeprecated-non-prototype]
+
+cargo:warning=local void bi_flush(s)
+
+cargo:warning=           ^
+
+cargo:warning=src/zlib/trees.c:1173:12: warning: a function declaration without a prototype is deprecated in all versions of C and is not supported in C2x [-Wdeprecated-non-prototype]
+
+cargo:warning=src/zlib/trees.c:1190:12: warning: a function declaration without a prototype is deprecated in all versions of C and is not supported in C2x [-Wdeprecated-non-prototype]
+
+cargo:warning=local void bi_windup(s)
+
+cargo:warning=           ^
+
+cargo:warning=src/zlib/trees.c:1190:12: warning: a function declaration without a prototype is deprecated in all versions of C and is not supported in C2x [-Wdeprecated-non-prototype]
+
+cargo:warning=34 warnings generated.
+
+exit status: 0
+running: "cc" "-O0" "-ffunction-sections" "-fdata-sections" "-fPIC" "-gdwarf-2" "-fno-omit-frame-pointer" "-arch" "arm64" "-I" "src/zlib" "-fvisibility=hidden" "-DZ_SOLO" "-DSTDC" "-D_LARGEFILE64_SOURCE" "-D_POSIX_SOURCE" "-D_C99_SOURCE" "-o" "/Users/neil/Projects/Stagchain/target/debug/build/libz-sys-d4334731cb15a330/out/lib/src/zlib/uncompr.o" "-c" "src/zlib/uncompr.c"
+cargo:warning=src/zlib/uncompr.c:27:13: warning: a function declaration without a prototype is deprecated in all versions of C and is not supported in C2x [-Wdeprecated-non-prototype]
+
+cargo:warning=int ZEXPORT uncompress2 (dest, destLen, source, sourceLen)
+
+cargo:warning=            ^
+
+cargo:warning=src/zlib/uncompr.c:86:13: warning: a function declaration without a prototype is deprecated in all versions of C and is not supported in C2x [-Wdeprecated-non-prototype]
+
+cargo:warning=int ZEXPORT uncompress (dest, destLen, source, sourceLen)
+
+cargo:warning=            ^
+
+cargo:warning=2 warnings generated.
+
+exit status: 0
+running: "cc" "-O0" "-ffunction-sections" "-fdata-sections" "-fPIC" "-gdwarf-2" "-fno-omit-frame-pointer" "-arch" "arm64" "-I" "src/zlib" "-fvisibility=hidden" "-DZ_SOLO" "-DSTDC" "-D_LARGEFILE64_SOURCE" "-D_POSIX_SOURCE" "-D_C99_SOURCE" "-o" "/Users/neil/Projects/Stagchain/target/debug/build/libz-sys-d4334731cb15a330/out/lib/src/zlib/zutil.o" "-c" "src/zlib/zutil.c"
+cargo:warning=src/zlib/zutil.c:133:22: warning: a function declaration without a prototype is deprecated in all versions of C and is not supported in C2x [-Wdeprecated-non-prototype]
+
+cargo:warning=const char * ZEXPORT zError(err)
+
+cargo:warning=                     ^
+
+cargo:warning=src/zlib/zutil.c:149:20: warning: a function declaration without a prototype is deprecated in all versions of C and is not supported in C2x [-Wdeprecated-non-prototype]
+
+cargo:warning=void ZLIB_INTERNAL zmemcpy(dest, source, len)
+
+cargo:warning=                   ^
+
+cargo:warning=src/zlib/zutil.c:160:19: warning: a function declaration without a prototype is deprecated in all versions of C and is not supported in C2x [-Wdeprecated-non-prototype]
+
+cargo:warning=int ZLIB_INTERNAL zmemcmp(s1, s2, len)
+
+cargo:warning=                  ^
+
+cargo:warning=src/zlib/zutil.c:173:20: warning: a function declaration without a prototype is deprecated in all versions of C and is not supported in C2x [-Wdeprecated-non-prototype]
+
+cargo:warning=void ZLIB_INTERNAL zmemzero(dest, len)
+
+cargo:warning=                   ^
+
+cargo:warning=4 warnings generated.
+
+exit status: 0
+cargo:rerun-if-env-changed=AR_aarch64-apple-darwin
+AR_aarch64-apple-darwin = None
+cargo:rerun-if-env-changed=AR_aarch64_apple_darwin
+AR_aarch64_apple_darwin = None
+cargo:rerun-if-env-changed=HOST_AR
+HOST_AR = None
+cargo:rerun-if-env-changed=AR
+AR = None
+cargo:rerun-if-env-changed=ARFLAGS_aarch64-apple-darwin
+ARFLAGS_aarch64-apple-darwin = None
+cargo:rerun-if-env-changed=ARFLAGS_aarch64_apple_darwin
+ARFLAGS_aarch64_apple_darwin = None
+cargo:rerun-if-env-changed=HOST_ARFLAGS
+HOST_ARFLAGS = None
+cargo:rerun-if-env-changed=ARFLAGS
+ARFLAGS = None
+running: ZERO_AR_DATE="1" "ar" "cq" "/Users/neil/Projects/Stagchain/target/debug/build/libz-sys-d4334731cb15a330/out/lib/libz.a" "/Users/neil/Projects/Stagchain/target/debug/build/libz-sys-d4334731cb15a330/out/lib/src/zlib/adler32.o" "/Users/neil/Projects/Stagchain/target/debug/build/libz-sys-d4334731cb15a330/out/lib/src/zlib/compress.o" "/Users/neil/Projects/Stagchain/target/debug/build/libz-sys-d4334731cb15a330/out/lib/src/zlib/crc32.o" "/Users/neil/Projects/Stagchain/target/debug/build/libz-sys-d4334731cb15a330/out/lib/src/zlib/deflate.o" "/Users/neil/Projects/Stagchain/target/debug/build/libz-sys-d4334731cb15a330/out/lib/src/zlib/infback.o" "/Users/neil/Projects/Stagchain/target/debug/build/libz-sys-d4334731cb15a330/out/lib/src/zlib/inffast.o" "/Users/neil/Projects/Stagchain/target/debug/build/libz-sys-d4334731cb15a330/out/lib/src/zlib/inflate.o" "/Users/neil/Projects/Stagchain/target/debug/build/libz-sys-d4334731cb15a330/out/lib/src/zlib/inftrees.o" "/Users/neil/Projects/Stagchain/target/debug/build/libz-sys-d4334731cb15a330/out/lib/src/zlib/trees.o" "/Users/neil/Projects/Stagchain/target/debug/build/libz-sys-d4334731cb15a330/out/lib/src/zlib/uncompr.o" "/Users/neil/Projects/Stagchain/target/debug/build/libz-sys-d4334731cb15a330/out/lib/src/zlib/zutil.o"
+exit status: 0
+running: "ar" "s" "/Users/neil/Projects/Stagchain/target/debug/build/libz-sys-d4334731cb15a330/out/lib/libz.a"
+exit status: 0
+cargo:rustc-link-lib=static=z
+cargo:rustc-link-search=native=/Users/neil/Projects/Stagchain/target/debug/build/libz-sys-d4334731cb15a330/out/lib
+cargo:root=/Users/neil/Projects/Stagchain/target/debug/build/libz-sys-d4334731cb15a330/out
+cargo:rustc-link-search=native=/Users/neil/Projects/Stagchain/target/debug/build/libz-sys-d4334731cb15a330/out/lib
+cargo:include=/Users/neil/Projects/Stagchain/target/debug/build/libz-sys-d4334731cb15a330/out/include

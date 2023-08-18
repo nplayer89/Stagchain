@@ -1,0 +1,15 @@
+/Users/neil/Projects/Stagchain/target/debug/deps/libp2p_noise-c2d338a059968c26.rmeta: /Users/neil/.cargo/registry/src/index.crates.io-6f17d22bba15001f/libp2p-noise-0.32.0/src/lib.rs /Users/neil/.cargo/registry/src/index.crates.io-6f17d22bba15001f/libp2p-noise-0.32.0/src/error.rs /Users/neil/.cargo/registry/src/index.crates.io-6f17d22bba15001f/libp2p-noise-0.32.0/src/io.rs /Users/neil/.cargo/registry/src/index.crates.io-6f17d22bba15001f/libp2p-noise-0.32.0/src/io/framed.rs /Users/neil/.cargo/registry/src/index.crates.io-6f17d22bba15001f/libp2p-noise-0.32.0/src/io/handshake.rs /Users/neil/.cargo/registry/src/index.crates.io-6f17d22bba15001f/libp2p-noise-0.32.0/src/protocol.rs /Users/neil/.cargo/registry/src/index.crates.io-6f17d22bba15001f/libp2p-noise-0.32.0/src/protocol/x25519.rs /Users/neil/.cargo/registry/src/index.crates.io-6f17d22bba15001f/libp2p-noise-0.32.0/src/protocol/x25519_spec.rs /Users/neil/Projects/Stagchain/target/debug/build/libp2p-noise-397abcf6f4152128/out/payload.proto.rs
+
+/Users/neil/Projects/Stagchain/target/debug/deps/libp2p_noise-c2d338a059968c26.d: /Users/neil/.cargo/registry/src/index.crates.io-6f17d22bba15001f/libp2p-noise-0.32.0/src/lib.rs /Users/neil/.cargo/registry/src/index.crates.io-6f17d22bba15001f/libp2p-noise-0.32.0/src/error.rs /Users/neil/.cargo/registry/src/index.crates.io-6f17d22bba15001f/libp2p-noise-0.32.0/src/io.rs /Users/neil/.cargo/registry/src/index.crates.io-6f17d22bba15001f/libp2p-noise-0.32.0/src/io/framed.rs /Users/neil/.cargo/registry/src/index.crates.io-6f17d22bba15001f/libp2p-noise-0.32.0/src/io/handshake.rs /Users/neil/.cargo/registry/src/index.crates.io-6f17d22bba15001f/libp2p-noise-0.32.0/src/protocol.rs /Users/neil/.cargo/registry/src/index.crates.io-6f17d22bba15001f/libp2p-noise-0.32.0/src/protocol/x25519.rs /Users/neil/.cargo/registry/src/index.crates.io-6f17d22bba15001f/libp2p-noise-0.32.0/src/protocol/x25519_spec.rs /Users/neil/Projects/Stagchain/target/debug/build/libp2p-noise-397abcf6f4152128/out/payload.proto.rs
+
+/Users/neil/.cargo/registry/src/index.crates.io-6f17d22bba15001f/libp2p-noise-0.32.0/src/lib.rs:
+/Users/neil/.cargo/registry/src/index.crates.io-6f17d22bba15001f/libp2p-noise-0.32.0/src/error.rs:
+/Users/neil/.cargo/registry/src/index.crates.io-6f17d22bba15001f/libp2p-noise-0.32.0/src/io.rs:
+/Users/neil/.cargo/registry/src/index.crates.io-6f17d22bba15001f/libp2p-noise-0.32.0/src/io/framed.rs:
+/Users/neil/.cargo/registry/src/index.crates.io-6f17d22bba15001f/libp2p-noise-0.32.0/src/io/handshake.rs:
+/Users/neil/.cargo/registry/src/index.crates.io-6f17d22bba15001f/libp2p-noise-0.32.0/src/protocol.rs:
+/Users/neil/.cargo/registry/src/index.crates.io-6f17d22bba15001f/libp2p-noise-0.32.0/src/protocol/x25519.rs:
+/Users/neil/.cargo/registry/src/index.crates.io-6f17d22bba15001f/libp2p-noise-0.32.0/src/protocol/x25519_spec.rs:
+/Users/neil/Projects/Stagchain/target/debug/build/libp2p-noise-397abcf6f4152128/out/payload.proto.rs:
+
+# env-dep:OUT_DIR=/Users/neil/Projects/Stagchain/target/debug/build/libp2p-noise-397abcf6f4152128/out
