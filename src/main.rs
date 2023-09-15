@@ -3,4 +3,3 @@ fn main() {
     //init blockchain
     println!("Starting Client");
 }
-
